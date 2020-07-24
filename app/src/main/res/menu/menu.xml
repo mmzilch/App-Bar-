@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.MainActivity">
+    <item
+        android:id="@+id/menu_smile"
+        android:contentDescription="@string/content_description_one"
+        android:icon="@drawable/ic_smile"
+        android:orderInCategory="100"
+        android:title="Smile"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_favourite"
+        android:contentDescription="@string/content_description_two"
+        android:icon="@drawable/ic_favourite"
+        android:orderInCategory="100"
+        android:title="Favourite"
+        app:showAsAction="always" />
+
+</menu>

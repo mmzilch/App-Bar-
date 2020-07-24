@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@id/toolbar">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/a"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.myapplication.MainActivity"
+        tools:showIn="@layout/activity_main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Jasmine, the “Queen of the Night”, releases its romantic, floral aroma under the cover of darkness. It is balancing for both the mind and the skin while promoting euphoric and peaceful feelings. Jasmine has a recognizable, heady aroma, which lingers on the air in the places it grows. When we inhale any aroma, the smell is processed by the olfactory bulb. This bulb lies at the the bottom of the brain, right next to the amygdala and the hippocampus—both of which help process emotion and memory. This may explain why jasmine has become such a powerful symbol in much of the world. Jasmine’s meaning varies by place and culture, but it often symbolizes love, beauty or sensuality. Its pure white blossoms can also symbolize purity. Because the small, unassuming white flowers bloom at night with such a powerful scent, jasmine sometimes symbolizes the value of modesty. In Thailand, jasmine represents motherhood and signifies love and respect. In Indonesia, jasmine is found at weddings, particularly on the island of Java. In the Philippines, where jasmine was introduced in the 1700s, jasmine is a symbol of honour and respect, and dignitaries are often presented with jasmine wreaths. Jasmine is commonly used in Hindu rituals across India, and women often wear it in their hair as a symbol of good fortune. In Renaissance Italy, the pure white jasmine flowers became associated with the purity of Mary, and jasmine flowers are shown in many religious paintings. Many cities and countries have adopted jasmine as their symbol, including the Syrian city of Damascus, as well as Pakistan, Philippines, Indonesia, and Tunisia. It’s not the official state flower of Hawaii (that’s hibiscus) but it’s an unofficial favourite. Pikake, as jasmine is called in Hawaii, is frequently woven into leis. The word jasmine derives from the Persian “yasameen”, meaning “gift from God”. Jasmine is sometimes referred as “Queen of the Night”, both because it blooms at night, and because the luscious fragrance is thought to inspire feelings of sensuality, intimacy, romance and love." />
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
